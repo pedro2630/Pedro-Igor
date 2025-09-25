@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float vetor[8];
+    float soma = 0, media;
+
+    printf("Digite 8 números reais:\n");
+    for (int i = 0; i < 8; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%f", &vetor[i]);
+        soma += vetor[i];
+    }
+
+    media = soma / 8;
+    printf("A média aritmética dos valores é: %.2f\n", media);
+    return 0;
+}
